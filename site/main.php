@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>메인 페이지</h1>
+    <h1>메인 페이지 test</h1>
 
     <?php 
     if(isset($_SESSION['user_id'])) {
