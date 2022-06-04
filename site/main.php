@@ -1,14 +1,16 @@
 <?php session_start(); ?>
 <!doctype html>
 
+
 <html lang="ko">
+
 <head>
-    <link rel="stylesheet" href="./style.css";
-    <title>Yong site</title>
+    <link rel="stylesheet" href="./style.css" ; <title>Yong site</title>
 </head>
+
 <body>
-    <h1>메인 페이지</h1>
-    
+    <h1>메인 페이지 test</h1>
+
     <?php 
     if(isset($_SESSION['user_id'])) {
             $user_name = $_SESSION['name'];
