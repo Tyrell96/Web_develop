@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <!doctype html>
 
-<html lang="kr">
+<html lang="ko">
 <head>
     <link rel="stylesheet" href="./style.css";
     <title>Yong site</title>

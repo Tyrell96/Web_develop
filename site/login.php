@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
-    <title>로그인 페이지</title>
+    <title>Login</title>
 </head>
 <body>
     <?php if(!isset($_session['login_id'])){ ?>
         <form method='post' action="login_ok.php " autocomplete="off">
-        <p>로그인 페이지</p><br>
+        <p>Login Page</p><br>
+        <p><div class=subject>ID</div><br>
         <p><input type="text" name='login_id' placeholder="아이디" maxlength="15"/></p>
+        <p><div class=subject>Password</div></div><br>
         <p><input type="text" name='login_pw' placeholder="비밀번호" maxlength="20"/></p>
         <button type="submit" value="Login"> 로그인</button>
         <button type="button" value="join" onclick="window.location.href='./join.php'">회원가입</button>

