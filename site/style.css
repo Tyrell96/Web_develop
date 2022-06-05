@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    background: linear-gradient(120deg, #2980b9,#8e44ad);
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+.title {
+    transform: translate(47%, 100%);
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+}
+.center h1{
+    text-align: center;
+    margin: 50px 50px;
+    padding: 0 0 20px 0;
+    font-size: large;
+    border-bottom: 1px solid silver;
+}
+.center p{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin :30px 70px;
+    padding: 2%;
+
+
+}
+
+.login{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background: white;
+    border-radius: 10px;
+    
+
+
+}
+.login form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
