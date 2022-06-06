@@ -54,3 +54,43 @@ body{
     padding: 0 40px;
     box-sizing: border-box;
 }
+
+.list-table thead{
+    text-align: center;
+    background-color: #2980b9;
+    border-radius: 10px;
+}
+
+.list-table tbody{
+    text-align: center;
+}
+
+.write_btn a button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.writeBtn {
+    background-color: #1E8BF0;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.board_write div{
+    position: absolute;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 10px;
+}

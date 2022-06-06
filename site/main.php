@@ -6,7 +6,7 @@
 
 <head>
     <div class="title">
-    <link rel="stylesheet" href="./style.css" ; <title>Tyrell</title>
+    <link rel="stylesheet" href="./css/style.css" ; <title>Tyrell</title>
     </div>
 </head>
 

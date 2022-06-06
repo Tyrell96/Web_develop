@@ -3,7 +3,7 @@
 <html lang="ko">
     <head>
     
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 	<meta charset="UTF-8">
     <title>join</title>
     <script>

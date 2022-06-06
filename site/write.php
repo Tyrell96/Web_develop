@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <title>게시판</title>
-<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
     <div id="board_write">
@@ -19,13 +19,13 @@
                     </div>
                     <div class="wi_line"></div>
                     <div id="in_content">
-                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
+                        <textarea name="content" id="ucontent" rows='4' cols='55' placeholder="내용" required></textarea>
                     </div>
                     <div id="in_pw">
                         <input type="password" name="pw" id="upw"  placeholder="비밀번호" required />  
                     </div>
                     <div class="bt_se">
-                        <button type="submit">글 작성</button>
+                        <button class="writeBtn" type="submit">글 작성</button>
                     </div>
                 </form>
             </div>
