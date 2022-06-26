@@ -1,12 +1,6 @@
 <?php 
     include "../db.php";
     
-    // if (!isset($_POST['join_name']) || !isset($_POST['join_id']) || !isset($_POST['join_pw'])) {
-    //     header("Content-type: text/html; charset=UTF-8");
-    //     echo "<script>alert('기입하지 않은 정보가 있거나 잘못된 접근입니다.')";
-    //     echo "window.location.replace('./join.php');</script>";
-    //     exit;
-    // }
     $join_name = $_POST['join_name'];
     $join_id = $_POST['join_id'];
     $join_pw = $_POST['join_pw'];

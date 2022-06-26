@@ -8,9 +8,19 @@
     <title>join</title>
     <script>
     function address(){
-		url = "address.php";
+		url = "./address.php";
 		window.open(url,"주소검색",'width=500,height=400, scrollbars=no, resizable=no');
 	}
+    function dbcheckid(){
+        var userid = document.getElementById("join_id").value;
+        if(userid){
+            url = "dbcheck.php?userid="+userid;
+            window.open(url, "아이디중복확인", "width=500,height=400");
+        } else {
+            alert("아이디를 입력 후 다시 시도해주세요");
+        }
+
+    }
     </script>
     </head>
     <body>
@@ -21,13 +31,16 @@
             <p><div class=subject>Name</div></div><br>
             <p><input type="text" name="join_name" placeholder="Name"required></p>
             <p><div class=subject>ID</div></div><br>
-            <p><input type="text" name="join_id" placeholder="ID"required></p>
+            <input type="text" name="join_id" id="join_id" placeholder="ID"required>
+            <button type="button" onclick="dbcheckid()" name="db_checkid">
+            중복 확인</button>
+            <input type="hidden" name="dbcheck" value="iduncheck"/>
             <p><div class=subject>Password2</div></div><br>
             <p><input type="password" name="join_pw" placeholder="password" required></p>
             <p><div class=subject>Password2</div></div><br>
-            <p><input type="text" name='join_pw2' placeholder="password" maxlength="20"/></p>
+            <p><input type="password" name='join_pw2' placeholder="password" maxlength="20" required/></p>
             <p><div class=subject>주소</div><br>
-            <input class=textform type="text" id="address" name="login_addr" onclick="address();" placeholder="주소를 검색해주세요." required></p>
+            <input class=textform type="text" id="join_addr" name="login_addr" onclick="address();" placeholder="주소를 검색해주세요." required></p>
             <p><input type="submit" value="가입하기"></p>
 
             

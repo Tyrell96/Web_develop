@@ -19,7 +19,9 @@
             $user_name = $_SESSION['name'];
             echo "<p>$user_name 님 환영합니다.</p>";
             echo "<p><button onclick=\"location.href='logout.php'\">로그아웃</button></p>";
+            echo "<p><button onclick=\"location.href='mypage.php'\">마이페이지</button></p>";
             echo "<p><button onclick=\"location.href='board.php'\">게시판</button></p>";
+            
     }
     else{
         
