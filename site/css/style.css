@@ -1,12 +1,17 @@
+@font-face {
+    font-family: 'neodgm';
+    src: url('./neodgm.woff') format('woff');
+}
 body{
     margin: 0;
     padding: 0;
-    font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-family: 'neodgm';
     font-weight: normal;
     font-style: normal;
-    background: linear-gradient(120deg, #2980b9,#8e44ad);
+    background: url('../../load.gif');
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 
 
@@ -17,6 +22,7 @@ body{
     font-family:'Times New Roman', Times, serif;
 }
 .center{
+    font-family: 'neodgm';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,6 +31,7 @@ body{
     border-radius: 10px;
 }
 .center h1{
+    font-family: 'neodgm';
     text-align: center;
     margin: 50px 50px;
     padding: 0 0 20px 0;
@@ -32,6 +39,7 @@ body{
     border-bottom: 1px solid silver;
 }
 .center p{
+    font-family: 'neodgm';
     position: relative;
     border-bottom: 2px solid #adadad;
     margin :30px 70px;
@@ -50,9 +58,23 @@ body{
 
 
 }
+.board_area h1{
+    text-align: center;
+}
+.list-table{
+    width: 100%;
+    height: 70%;
+}
 .login form{
     padding: 0 40px;
     box-sizing: border-box;
+}
+
+.board-center{
+    position: relative;
+    top: 5%;
+    left: 40%;
+
 }
 
 .list-table thead{
@@ -93,4 +115,12 @@ body{
     transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 10px;
+}
+.board_area{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
 }

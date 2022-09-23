@@ -6,8 +6,9 @@
 
 <head>
     <div class="title">
-    <link rel="stylesheet" href="./css/style.css" ; <title>Tyrell</title>
-    </div>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tyrell CTF</title>
+</div>
 </head>
 
 <body>
